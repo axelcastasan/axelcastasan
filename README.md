@@ -8,13 +8,15 @@
 
 Soluciones para procesos de negocio, validación de datos y generación de documentos.
 
-[Proyectos y colaboraciones](#proyectos-y-colaboraciones) · [Experiencia 2026](docs/experiencia-2026.md) · [Evidencia de contribuciones](docs/colaboraciones.md)
+[Portafolio interactivo](https://axelcastasan.github.io/axelcastasan/) · [Proyectos y colaboraciones](#proyectos-y-colaboraciones) · [Experiencia 2026](docs/experiencia-2026.md) · [Evidencia de contribuciones](docs/colaboraciones.md)
 
 </div>
 
 ---
 
-## Sobre mí
+<details open>
+<summary><h2>Sobre mí</h2></summary>
+
 
 ![Desarrollo con Python y atención a las necesidades del usuario](assets/sobre-mi.gif)
 
@@ -22,7 +24,11 @@ Soy estudiante de Ingeniería en Sistemas Computacionales en la Universidad del 
 
 Utilizo IA generativa como apoyo a la programación, el diseño de interfaces y la documentación técnica. Me interesa seguir desarrollándome en automatización e IA aplicada.
 
-## Trayectoria · 2025–2026
+</details>
+
+<details>
+<summary><h2>Trayectoria · 2025–2026</h2></summary>
+
 
 ![Construir sobre lo aprendido durante 2025 y 2026](assets/trayectoria.gif)
 
@@ -31,7 +37,11 @@ Utilizo IA generativa como apoyo a la programación, el diseño de interfaces y 
 | **2026** | Web, móvil y procesamiento de lenguaje | Prácticas en MIISA y contribuciones públicas a App-SPM, Eje_EGEL y un proyecto de análisis de sentimientos. |
 | **2025** | Aplicaciones web y bases de datos | Colaboraciones en Encuesta-docente y AbarrotesUVM. Reconocimiento académico: **9,93/10** en séptimo semestre. |
 
-## Proyectos y colaboraciones
+</details>
+
+<details>
+<summary><h2>Proyectos y colaboraciones</h2></summary>
+
 
 ![Proyectos de equipo y aportaciones enlazadas a su historial](assets/colaboraciones.gif)
 
@@ -59,7 +69,11 @@ Estos enlaces requieren autorización del propietario. No se publican código ni
 
 </details>
 
-## Experiencia destacada · 2026
+</details>
+
+<details>
+<summary><h2>Experiencia destacada · 2026</h2></summary>
+
 
 ![Software para la operación diaria: experiencia en MIISA](assets/experiencia.gif)
 
@@ -76,7 +90,11 @@ Estos enlaces requieren autorización del propietario. No se publican código ni
 
 [Leer contexto, contribuciones y alcance](docs/experiencia-2026.md)
 
-## Herramientas y conocimientos
+</details>
+
+<details>
+<summary><h2>Herramientas y conocimientos</h2></summary>
+
 
 ![Herramientas para desarrollo web, datos y documentación técnica](assets/herramientas.gif)
 
@@ -89,7 +107,11 @@ Estos enlaces requieren autorización del propietario. No se publican código ni
 
 **En proyectos académicos:** Flutter, Dart, FastAPI, React, MongoDB, NLTK y scikit-learn. [Ver contexto de uso](docs/colaboraciones.md).
 
-## Código público
+</details>
+
+<details>
+<summary><h2>Código público</h2></summary>
+
 
 ![Ejercicios de Python y prácticas académicas disponibles](assets/codigo.gif)
 
@@ -101,10 +123,16 @@ La experiencia profesional de 2026 se describe por separado. Las cifras y los hi
 
 ---
 
-## Formación e intereses
+</details>
+
+<details>
+<summary><h2>Formación e intereses</h2></summary>
+
 
 ![Ingeniería en Sistemas Computacionales e intereses profesionales](assets/formacion.gif)
 
 **Formación:** Ingeniería en Sistemas Computacionales, UVM · 2022–2027 (egreso previsto).  
 **Idiomas:** inglés B2.  
 **Intereses profesionales:** desarrollo con Python, automatización e IA aplicada.
+
+</details>

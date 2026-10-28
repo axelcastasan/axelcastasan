@@ -83,3 +83,52 @@ for slug, (title, subtitle) in SECTIONS.items():
         assert section_duration == 960, slug
     assert path.stat().st_size < 200_000, slug
     print(f"Sección verificada: {slug}, 960 ms, una reproducción")
+
+
+def mobile_banner(slug, title, subtitle, hero=False):
+    height = 340 if hero else 240
+    image = Image.new("RGB", (640, height), "#102435")
+    pen = ImageDraw.Draw(image)
+    pen.rectangle((0, 0, 7, height), fill="#65d7c2")
+    y = 24
+    if hero:
+        pen.text((32, y), "Portafolio 2025–2026", font=ImageFont.truetype(str(FONTS / "segoeui.ttf"), 23), fill="#b9d4df")
+        y += 48
+    for text, font_name, size, color in (
+        (title, "georgiab.ttf", 45 if hero else 36, "#ffffff"),
+        (subtitle, "segoeui.ttf", 26, "#b9d4df"),
+    ):
+        font = ImageFont.truetype(str(FONTS / font_name), size)
+        line = ""
+        lines = []
+        for word in text.split():
+            candidate = f"{line} {word}".strip()
+            if font.getlength(candidate) > 576:
+                lines.append(line)
+                line = word
+            else:
+                line = candidate
+        lines.append(line)
+        for line in lines:
+            assert font.getlength(line) <= 576, slug
+            pen.text((32, y), line, font=font, fill=color)
+            y += size + 10
+        y += 10
+    assert y < height - 12, (slug, y)
+    image.save(ASSETS / f"{slug}-mobile.png")
+    frames = []
+    for index in range(8):
+        frame = image.copy()
+        ImageDraw.Draw(frame).line((32, height - 12, round(32 + 576 * index / 7), height - 12), fill="#65d7c2", width=2)
+        frames.append(frame)
+    path = ASSETS / f"{slug}-mobile.gif"
+    frames[0].save(path, save_all=True, append_images=frames[1:], duration=120, optimize=True)
+    with Image.open(path) as result:
+        assert result.size == (640, height) and result.n_frames == 8
+        assert "loop" not in result.info
+    print(f"Versión móvil verificada: {slug}, 640x{height}")
+
+
+mobile_banner("portada", "Axel Castañeda Sánchez", "Desarrollo web, Python y automatización", hero=True)
+for slug, (title, subtitle) in SECTIONS.items():
+    mobile_banner(slug, title, subtitle)

@@ -50,4 +50,7 @@ footer { padding-block:0 30px; color:var(--muted); font-size:14px; }
   .panel { padding-inline:6px; }
   .period { margin-left:12px; font-size:14px; }
   .band { margin-bottom:20px; }
+  nav { gap:6px 20px; }
+  nav a { display:inline-flex; align-items:center; min-height:44px; }
+  summary h2,summary h3 { min-width:0; overflow-wrap:anywhere; }
 }

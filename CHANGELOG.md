@@ -2,6 +2,10 @@
 
 ## 2026-10-28
 
+- [FIX] `README.md`: presentación en bloques verticales y títulos plegables compactos para leer el portafolio dentro de GitHub en celular.
+- [FIX] `README.md`, `index.html` y `assets/*-mobile.*`: imágenes adaptadas a pantallas pequeñas con texto legible.
+- [FIX] `assets/portafolio.css`: enlaces de navegación con área táctil mínima de 44 px en móvil.
+- [CHORE] `tools/generar_portada.py`: generación y comprobación de variantes móviles.
 - [FIX] `index.html`: actualizar la referencia del script para evitar reutilizar una versión anterior en caché.
 - [FIX] `assets/portafolio.js`: reabrir una sección desde el mismo enlace e interrumpir un cierre pendiente.
 - [FEAT] `README.md`: siete secciones plegables mediante controles nativos de GitHub y enlace al portafolio interactivo.

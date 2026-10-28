@@ -1,12 +1,14 @@
 <div align="center">
 
+![Axel Castañeda Sánchez · Desarrollo web, datos y automatización](assets/portada.gif)
+
 # Axel Castañeda Sánchez
 
 **Desarrollo web · Python · MySQL · Automatización**
 
 Soluciones para procesos de negocio, validación de datos y generación de documentos.
 
-[Experiencia 2026](docs/experiencia-2026.md) · [Código académico](https://github.com/axelcastasan/mirepositoriouvm)
+[Proyectos y colaboraciones](#proyectos-y-colaboraciones) · [Experiencia 2026](docs/experiencia-2026.md) · [Evidencia de contribuciones](docs/colaboraciones.md)
 
 </div>
 
@@ -22,8 +24,32 @@ Utilizo IA generativa como apoyo a la programación, el diseño de interfaces y 
 
 | Año | Enfoque | Hito |
 | --- | --- | --- |
-| **2026** | Desarrollo web y automatización | Prácticas en MIISA, de abril a octubre: API, validación de datos, MySQL y generación de documentos. |
-| **2025** | Formación en Ingeniería en Sistemas Computacionales | Reconocimiento por desempeño académico: promedio de **9,93/10** en séptimo semestre. |
+| **2026** | Web, móvil y procesamiento de lenguaje | Prácticas en MIISA y contribuciones públicas a App-SPM, Eje_EGEL y un proyecto de análisis de sentimientos. |
+| **2025** | Aplicaciones web y bases de datos | Colaboraciones en Encuesta-docente y AbarrotesUVM. Reconocimiento académico: **9,93/10** en séptimo semestre. |
+
+## Proyectos y colaboraciones
+
+Proyectos académicos de equipo. Los resúmenes distinguen el objetivo del proyecto de mis aportaciones registradas en Git.
+
+| Proyecto | Qué se hizo | Mi aportación |
+| --- | --- | --- |
+| **[Análisis de sentimientos](https://github.com/Roroma24/Proyecto-integrador-etapa-3-ISBC)** · 2026 | Aplicación Flask para analizar reseñas con procesamiento de lenguaje natural. | Limpieza de texto, corrección ortográfica, lematización, traducción y ajuste del clasificador con balanceo de clases. |
+| **[App-SPM](https://github.com/Roroma24/App-SPM)** · 2026 | Aplicación móvil universitaria con Flutter y backend Flask. | Muro de expresión, perfil, notificaciones y corrección de la integración del proveedor de usuario. |
+| **[Simulador EGEL](https://github.com/SVillaluz/Eje_EGEL)** · 2026 | Plataforma de práctica con preguntas y retroalimentación. | Validación de respuestas, alertas visuales, retroalimentación y organización de preguntas con opciones aleatorias. |
+| **[Encuesta docente](https://github.com/Roroma24/Encuesta-docente)** · 2025 | Sistema web de evaluación docente y de servicios escolares. | Rutas y filtros de evaluación, interfaces, relaciones y lógica SQL, reportes administrativos y documentación. |
+| **[AbarrotesUVM](https://github.com/Roroma24/AbarrotesUVM)** · 2025 | Prototipo de catálogo y carrito con FastAPI y MySQL. | Incorporación del backend: modelos, esquemas, operaciones de catálogo, autenticación y carrito; estructura SQL e interfaz de demostración. |
+
+[Ver commits y alcance de cada colaboración](docs/colaboraciones.md)
+
+<details>
+<summary>Trabajo en repositorios privados</summary>
+
+- **[listassist](https://github.com/axelcastasan/listassist)**: proyecto propio de asistencia para un grupo scout, con foco en el pase de lista.
+- **[Ejercicio-WSDL](https://github.com/Roroma24/Ejercicio-WSDL)**: colaboración académica; los detalles de implementación permanecen en el repositorio privado.
+
+Estos enlaces requieren autorización del propietario. No se publican código ni datos de esos repositorios en este perfil.
+
+</details>
 
 ## Experiencia destacada · 2026
 
@@ -48,6 +74,8 @@ Utilizo IA generativa como apoyo a la programación, el diseño de interfaces y 
 | Datos | MySQL, consultas, normalización, vistas, índices, migraciones |
 | Trabajo y documentación | Git, Scrum, Jira, Microsoft Loop, Google NotebookLM |
 | Conocimientos básicos | Power BI, conceptos de ETL y KPI |
+
+**En proyectos académicos:** Flutter, Dart, FastAPI, React, MongoDB, NLTK y scikit-learn. [Ver contexto de uso](docs/colaboraciones.md).
 
 ## Código público
 

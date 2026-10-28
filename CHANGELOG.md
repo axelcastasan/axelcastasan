@@ -2,6 +2,7 @@
 
 ## 2026-10-28
 
+- [FIX] `index.html`: actualizar la referencia del script para evitar reutilizar una versión anterior en caché.
 - [FIX] `assets/portafolio.js`: reabrir una sección desde el mismo enlace e interrumpir un cierre pendiente.
 - [FEAT] `README.md`: siete secciones plegables mediante controles nativos de GitHub y enlace al portafolio interactivo.
 - [FEAT] `index.html`, `assets/portafolio.css` y `assets/portafolio.js`: versión web responsiva con apertura y cierre animados, soporte de teclado y reducción de movimiento.

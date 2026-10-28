@@ -16,11 +16,15 @@ Soluciones para procesos de negocio, validación de datos y generación de docum
 
 ## Sobre mí
 
+![Desarrollo con Python y atención a las necesidades del usuario](assets/sobre-mi.gif)
+
 Soy estudiante de Ingeniería en Sistemas Computacionales en la Universidad del Valle de México, con egreso previsto en **febrero de 2027**. Durante mis prácticas profesionales he desarrollado funcionalidades web con Python y MySQL sobre un sistema existente, con instrucciones y revisión funcional del supervisor.
 
 Utilizo IA generativa como apoyo a la programación, el diseño de interfaces y la documentación técnica. Me interesa seguir desarrollándome en automatización e IA aplicada.
 
 ## Trayectoria · 2025–2026
+
+![Construir sobre lo aprendido durante 2025 y 2026](assets/trayectoria.gif)
 
 | Año | Enfoque | Hito |
 | --- | --- | --- |
@@ -28,6 +32,8 @@ Utilizo IA generativa como apoyo a la programación, el diseño de interfaces y 
 | **2025** | Aplicaciones web y bases de datos | Colaboraciones en Encuesta-docente y AbarrotesUVM. Reconocimiento académico: **9,93/10** en séptimo semestre. |
 
 ## Proyectos y colaboraciones
+
+![Proyectos de equipo y aportaciones enlazadas a su historial](assets/colaboraciones.gif)
 
 Proyectos académicos de equipo. Los resúmenes distinguen el objetivo del proyecto de mis aportaciones registradas en Git.
 
@@ -44,6 +50,8 @@ Proyectos académicos de equipo. Los resúmenes distinguen el objetivo del proye
 <details>
 <summary>Trabajo en repositorios privados</summary>
 
+![Referencias de proyectos cuyo código permanece privado](assets/privados.gif)
+
 - **[listassist](https://github.com/axelcastasan/listassist)**: proyecto propio de asistencia para un grupo scout, con foco en el pase de lista.
 - **[Ejercicio-WSDL](https://github.com/Roroma24/Ejercicio-WSDL)**: colaboración académica; los detalles de implementación permanecen en el repositorio privado.
 
@@ -52,6 +60,8 @@ Estos enlaces requieren autorización del propietario. No se publican código ni
 </details>
 
 ## Experiencia destacada · 2026
+
+![Software para la operación diaria: experiencia en MIISA](assets/experiencia.gif)
 
 | Desarrollo web | Bases de datos | Automatización |
 | --- | --- | --- |
@@ -68,6 +78,8 @@ Estos enlaces requieren autorización del propietario. No se publican código ni
 
 ## Herramientas y conocimientos
 
+![Herramientas para desarrollo web, datos y documentación técnica](assets/herramientas.gif)
+
 | Área | Tecnologías |
 | --- | --- |
 | Desarrollo web | Python, Flask, Django, API REST, Swagger, HTML5, CSS, JavaScript |
@@ -79,6 +91,8 @@ Estos enlaces requieren autorización del propietario. No se publican código ni
 
 ## Código público
 
+![Ejercicios de Python y prácticas académicas disponibles](assets/codigo.gif)
+
 ### [Ejercicios de Python · UVM](https://github.com/axelcastasan/mirepositoriouvm)
 
 Repositorio académico con ejercicios de Python y material de prácticas. Su historial público corresponde a **2024**; se conserva como muestra de fundamentos de programación.
@@ -86,6 +100,10 @@ Repositorio académico con ejercicios de Python y material de prácticas. Su his
 La experiencia profesional de 2026 se describe por separado. Las cifras y los hitos de esta presentación proceden de mi CV; no equivalen a demostraciones públicas del sistema de MIISA.
 
 ---
+
+## Formación e intereses
+
+![Ingeniería en Sistemas Computacionales e intereses profesionales](assets/formacion.gif)
 
 **Formación:** Ingeniería en Sistemas Computacionales, UVM · 2022–2027 (egreso previsto).  
 **Idiomas:** inglés B2.  

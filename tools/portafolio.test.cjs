@@ -6,6 +6,7 @@ const vm = require('node:vm');
 function setup(reduced = false, hash = '') {
   const events = {};
   const animations = [];
+  const link = { hash, addEventListener: (type, callback) => events.nav = callback };
   const summary = { addEventListener: (type, callback) => events[type] = callback, getBoundingClientRect: () => ({ height: 40 }) };
   const section = {
     open: false,
@@ -17,16 +18,18 @@ function setup(reduced = false, hash = '') {
       return animation;
     },
     addEventListener: (type, callback) => events[type] = callback,
+    dispatchEvent: event => events[event.type](),
     closest: () => section,
     parentElement: { closest: () => null },
     scrollIntoView() { this.scrolled = true; },
   };
   vm.runInNewContext(readFileSync(require('node:path').join(__dirname, '../assets/portafolio.js'), 'utf8'), {
     window: { matchMedia: () => ({ matches: reduced }), addEventListener() {} },
-    document: { querySelectorAll: () => [section], getElementById: id => id === 'proyectos' ? section : null },
+    document: { querySelectorAll: selector => selector === 'details' ? [section] : [link], getElementById: id => id === 'proyectos' ? section : null },
     location: { hash },
+    Event,
   });
-  return { section, animations, click: () => events.click({ preventDefault() {} }) };
+  return { section, animations, click: () => events.click({ preventDefault() {} }), navigate: () => events.nav() };
 }
 
 test('abre y cierra con animación; conserva el contenido hasta terminar el cierre', () => {
@@ -63,4 +66,17 @@ test('un enlace directo abre la sección y la muestra', () => {
   const ui = setup(false, '#proyectos');
   assert.equal(ui.section.open, true);
   assert.equal(ui.section.scrolled, true);
+});
+
+test('el mismo enlace vuelve a abrir la sección e interrumpe un cierre en curso', () => {
+  const ui = setup(false, '#proyectos');
+  ui.click();
+  ui.navigate();
+  assert.equal(ui.animations[0].cancelled, true);
+  assert.equal(ui.section.open, true);
+  ui.click();
+  ui.animations[1].onfinish();
+  assert.equal(ui.section.open, false);
+  ui.navigate();
+  assert.equal(ui.section.open, true);
 });

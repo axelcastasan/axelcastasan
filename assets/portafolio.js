@@ -30,6 +30,12 @@ for (const section of document.querySelectorAll('details')) {
   section.addEventListener('toggle', () => {
     if (!animation) expanded = section.open;
   });
+  section.addEventListener('reveal', () => {
+    animation?.cancel();
+    animation = undefined;
+    expanded = true;
+    section.open = true;
+  });
 }
 
 function revealHash() {
@@ -37,11 +43,16 @@ function revealHash() {
   const target = document.getElementById(id);
   let section = target?.closest('details');
   while (section) {
-    section.open = true;
+    section.dispatchEvent(new Event('reveal'));
     section = section.parentElement.closest('details');
   }
   target?.scrollIntoView({ block: 'start' });
 }
 
 window.addEventListener('hashchange', revealHash);
+for (const link of document.querySelectorAll('nav a[href^="#"]')) {
+  link.addEventListener('click', () => {
+    if (link.hash === location.hash) revealHash();
+  });
+}
 revealHash();
